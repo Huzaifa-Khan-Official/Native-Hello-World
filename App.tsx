@@ -1,19 +1,24 @@
-import React from "react";
+import { View, Text, SafeAreaView, ScrollView, StyleSheet } from 'react-native'
+import React from 'react'
+import FlatCards from './components/FlatCards'
 
-import {
-  View,
-  Text,
-  SafeAreaView
-} from "react-native";
-
-function App() {
+const App = () => {
   return (
     <SafeAreaView>
-      <View>
-        <Text>Hello World!</Text>
-      </View>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text>App</Text>
+          <FlatCards />
+        </View>
+      </ScrollView>
     </SafeAreaView>
   )
 }
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    padding: 10,
+  }
+});
+
+export default App
