@@ -11,9 +11,9 @@ const App = () => {
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.heading1}>Project 2</Text>
-          <FlatCards />
+          {/* <FlatCards />
           <ElevatedCards />
-          {/* <FancyCard /> */}
+          <FancyCard /> */}
           <ActionCard />
         </View>
       </ScrollView>
