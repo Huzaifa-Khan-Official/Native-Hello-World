@@ -4,6 +4,7 @@ import FlatCards from './components/FlatCards'
 import ElevatedCards from './components/ElevatedCards'
 import FancyCard from './components/FancyCard'
 import ActionCard from './components/ActionCard'
+import ContactList from './components/ContactList'
 
 const App = () => {
   return (
@@ -11,10 +12,11 @@ const App = () => {
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.heading1}>Project 2</Text>
-          {/* <FlatCards />
+          <FlatCards />
           <ElevatedCards />
-          <FancyCard /> */}
+          <FancyCard />
           <ActionCard />
+          <ContactList />
         </View>
       </ScrollView>
     </SafeAreaView>
